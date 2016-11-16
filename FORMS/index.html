@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <title>HTML homework - Forms</title>
@@ -11,15 +10,12 @@
                 padding: 20px;
                 margin-bottom: 20px;
             }
-
             label {
                 width: 150px;
                 display: inline-block;
             }
-
         </style>
     </head>
-
     <body>
         <div id="wrapper">
             <div id="main">
@@ -27,60 +23,73 @@
                     <div id="content" role="main">
                         <h1>Order Form</h1>
                         <!-- General info -->
-                        <form id="generalinfo">
+                        <form id="orderform">
                             <fieldset>
                                 <legend>General Info</legend>
                                 <label for="useremail">Email</label>
-                                <input type="email" id="useremail" placeholder="your@email.com" required> <br>
+                                <input type="email" id="useremail" placeholder="your@email.com" required>
+                                <br>
                                 <label for="userlogin">Login</label>
-                                <input type="text" id="userlogin" pattern="[A-Za-z][1-3]" placeholder="Login" required> <br>
+                                <input type="text" id="userlogin" pattern="[A-Za-z][1-3]" placeholder="Login" required>
+                                <br>
                                 <label for="userpass">Password</label>
                                 <input type="text" id="userpass" placeholder="Password" required="">
                             </fieldset>
-                        </form>
-                        <!--End of General info-->
-                        <!--User info-->
-                        <form id="userinfo">
+                            <!--End of General info-->
+                            <!--User info-->
                             <fieldset>
                                 <legend>User Info</legend>
                                 <label for="firstname">First name</label>
                                 <input type="text" id="firstname" pattern="[A-Za-z]" placeholder="John" required><br>
                                 <label for="secondname">Second Name</label>
-                                <input type="text" id="secondname" pattern="[A-Za-z]" placeholder="Doe" required> <br>
-                                <label>Gender</label> Male <input type="checkbox" name="gender" checked> Female <input type="checkbox" name="gender"> <br>
+                                <input type="text" id="secondname" pattern="[A-Za-z]" placeholder="Doe" required>
+                                <br>
+                                <label>Gender</label>
+                                Male
+                                <input type="checkbox" name="gender" checked>
+                                Female
+                                <input type="checkbox" name="gender">
+                                <br>
                                 <label for="age">Age</label>
-                                <input type="number" id="age" placeholder="32" required=""> <br>
+                                <input type="number" id="age" placeholder="32" required="">
+                                <br>
                                 <label for="about">About me</label>
                                 <textarea id="about" rows="5" cols="20" required=""></textarea>
                             </fieldset>
-                        </form>
-                        <!--End of User info-->
-                        <!--Order info-->
-                        <form id="orderinfo">
+                            <!--End of User info-->
+                            <!--Order info-->
                             <fieldset>
                                 <legend>Order info</legend>
                                 <label>Product</label>
                                 <select name="select">
-                            <option value="iphone">iphone</option>
-                            <option value="ipad">ipad</option>
-                            <option value="iwatch">iwatch</option>
-                          </select> <br>
-                                <label>Front Color Blac</label> Black <input type="radio" name="frontcolor" value="Black" checked> Pink <input type="radio" name="frontcolor" value="Pink"> Gold <input type="radio" name="frontcolor" value="Gold"> <br>
+                                    <option value="iphone">iphone</option>
+                                    <option value="ipad">ipad</option>
+                                    <option value="iwatch">iwatch</option>
+                                </select>
+                                <br>
+                                <label>Front Color Blac</label>
+                                Black
+                                <input type="radio" name="frontcolor" value="Black" checked>
+                                Pink
+                                <input type="radio" name="frontcolor" value="Pink">
+                                Gold
+                                <input type="radio" name="frontcolor" value="Gold">
+                                <br>
                                 <label for="backcolor">Back-side color</label>
                                 <input type="color" id="backcolor" value="#000000"><br>
                                 <label for="amount">Amount</label>
-                                <input type="number" id="amount" placeholder="5" required=""> <br>
+                                <input type="number" id="amount" placeholder="5" required="">
+                                <br>
                                 <label for="deliverydate">Delivery Date</label>
                                 <input type="date" id="deliverydate" required="">
                             </fieldset>
+                            <!--End User info-->
+                            <input type="reset" name="reset" value="Reset">
+                            <input type="submit" name="submit" value="Submit">
                         </form>
-                        <!--End User info-->
-                        <input type="reset" name="reset" value="Reset">
-                        <input type="submit" name="submit" value="Submit">
                     </div>
                 </div>
             </div>
         </div>
     </body>
-
 </html>
