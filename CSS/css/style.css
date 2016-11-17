@@ -658,6 +658,8 @@ button::-moz-focus-inner {
     color: #e8663c;
     font-size: 3em;
     font-weight: bold;
+    float: left;
+    padding: 6px;	
 }
 
 
