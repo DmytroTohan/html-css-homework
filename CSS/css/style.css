@@ -1319,10 +1319,10 @@ button::-moz-focus-inner {
     clear: both;
 }
 
-.row, .clearfix {
+/*.row, .clearfix {
     zoom: 1;
 }
-
+*/
 .clear {
     clear: both;
     display: block;
@@ -1616,7 +1616,7 @@ button::-moz-focus-inner {
 }
 
 .social-media li a:hover {
-    zoom: 1;
+    /*zoom: 1;*/
     filter: alpha(opacity=50);
     opacity: 0.7;
     -webkit-transition: opacity .15s ease-in-out;
@@ -1785,7 +1785,7 @@ button::-moz-focus-inner {
     }
     .nav {
         list-style: none;
-        *zoom: 1;
+       /*zoom: 1;*/ 
         width: 100%;
         position: absolute;
         left: 0;
