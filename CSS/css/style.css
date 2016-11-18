@@ -694,12 +694,13 @@ button::-moz-focus-inner {
 }
 
 .two-grids p {
-    width: 40%;
+    width: 45%;
     float: left;
-    margin-right: 1%;
+    margin-right: 5%;
 }
 
 .two-grids p:nth-child(2) {
+    float: right;
     margin-right: 0px;
 }
 
